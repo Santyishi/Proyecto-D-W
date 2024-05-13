@@ -1,0 +1,98 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+/*Para poner el fondo q me gustaria tener
+.background{
+    background-color:#a3805c;
+    text-align:center;
+}
+Creada exclusivamente para manejar el h1
+.background div h1{
+    text-align:left;
+    font-family: "Nothing You Could Do", cursive;
+}
+/*Lo utilizo para poner el nav donde me gustaria q estuivera
+.background nav{
+    text-align:right;
+}
+/*Para mover la imagen de lugar default al deseado
+.background div{
+    text-align:right;
+
+}
+/*Para controlar el tamaño de el logo de la pagina
+.background div img{
+    width:100px;
+    height:auto;
+}
+
+Utilizo esta clase para cambiar el tamaño de las imagenes, puede cambiar en un futuro proximo para incluir imagenes de otra pagina
+.tam-div div img{
+    width:250px;
+
+}
+cree esta clase para poder centralizar toda la pagina que es como me gustaria q quedara
+.nosotros{
+    font-size:20px;
+    text-align:center;
+}
+/*Todos mis h2 por el momento van a ser iguales, existe la posibilidad q en un futuro cambie
+h2{
+    font-family: "Nothing You Could Do", cursive;
+    text-align:center;
+}
+/*Utilizo este estilo para remarcar negrita en parrafos problablemente termine creando una clase para poder usar la etiqueta span de varias formas 
+span{
+    font-weight:bold;
+}
+.acercaC{
+    width:150px;
+    height: 600px;;
+}
+main{
+    display:grid;
+    
+}
+*/
+:root{
+    --bs-nav-link-hover-color:red;
+}
+
+
+/*Header*/
+header{
+    background-image:url(../images/header-coff.jpg);
+    display:flex;
+    justify-content: space-around;
+    font-family: "Nothing You Could Do", cursive;
+    height:100px;
+
+
+}
+.background-radius{
+    background-color: burlywood;
+    border-radius:10px;
+    margin:10px;
+}
+li:hover{
+    background-color: #281709;
+   
+}
+.navbar-nav .nav-link:hover{
+    color:aliceblue;
+    font-weight:bold;
+}
+
+
+/*footer*/
+footer{
+    background-color: #AF9074;
+    min-height: 250px;
+}
+.contactme-icon{
+    margin-right:4px; 
+}
+.text-align{
+    justify-content: center;
+    text-align: center;
+}
