@@ -28,6 +28,7 @@ header{
     background-color: burlywood;
     border-radius:10px;
     margin:10px;
+    color:var(--color-secundario)
 
 }
 li:hover, .header-back:hover{
