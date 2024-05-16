@@ -5,59 +5,7 @@
     box-sizing: border-box;
     padding: 0px;
 }
-/*Para poner el fondo q me gustaria tener
-.background{
-    background-color:#a3805c;
-    text-align:center;
-}
-Creada exclusivamente para manejar el h1
-.background div h1{
-    text-align:left;
-    font-family: "Nothing You Could Do", cursive;
-}
-/*Lo utilizo para poner el nav donde me gustaria q estuivera
-.background nav{
-    text-align:right;
-}
-/*Para mover la imagen de lugar default al deseado
-.background div{
-    text-align:right;
 
-}
-/*Para controlar el tamaño de el logo de la pagina
-.background div img{
-    width:100px;
-    height:auto;
-}
-
-Utilizo esta clase para cambiar el tamaño de las imagenes, puede cambiar en un futuro proximo para incluir imagenes de otra pagina
-.tam-div div img{
-    width:250px;
-
-}
-cree esta clase para poder centralizar toda la pagina que es como me gustaria q quedara
-.nosotros{
-    font-size:20px;
-    text-align:center;
-}
-/*Todos mis h2 por el momento van a ser iguales, existe la posibilidad q en un futuro cambie
-h2{
-    font-family: "Nothing You Could Do", cursive;
-    text-align:center;
-}
-/*Utilizo este estilo para remarcar negrita en parrafos problablemente termine creando una clase para poder usar la etiqueta span de varias formas 
-span{
-    font-weight:bold;
-}
-.acercaC{
-    width:150px;
-    height: 600px;;
-}
-main{
-    display:grid;
-    
-}
-*/
 :root{
     --color-principal:#AF9074;
     --color-secundario:#281709;
@@ -113,6 +61,21 @@ h2{
     font-family: "Nothing You Could Do", cursive;
     font-weight: bolder;
     text-decoration: underline;
+}
+
+h4{
+    font-family: "Nothing You Could Do", cursive;
+    text-shadow: 2px 6px 4px rgba(195, 143, 12, 0.5);
+    text-align: center;
+}
+h5{
+    font-family: "Nothing You Could Do", cursive;
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+span{
+    color:var(--color-secundario);
+    font-weight: bold;
 }
 /*index*/
 .ind-div-p{
@@ -187,38 +150,114 @@ text-align:center;
     grid-column:2/4; border:1px dashed var(--color-secundario);
 }
 /*acerca-del-cafe*/
-.acdca-section{
+.main-acdca{
     display: flex;
-    align-items: center;
-
 }
-.acdca-section-img{
-    max-width: 25%;
-    top: 0px;
-}
-.acdca-img{
-    width:100%;
+.container-image{
+    background-image: url(../images/cafe-en-grano.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 400px;
+    height: auto;
+    margin-right:20px;
 }
 .acdca-section-text{
-    max-width: 60%;
+    max-width: 80%;
 }
+/*tipos-de-cafe*/
 
+.section-tdc{
+   display: flex;
+   justify-content: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.section-tdc-size{
+    max-width: 50%;
+    max-height:35%;
+}
+.carrousel-background{
+    background-color: rgb(233, 186, 145,0.8);
+    border-radius:10px;
+}
+.tdc-section-procesado{
+    display:flex;
+    justify-content: space-between;
+    margin:15px;
+}
+.tdc-section-procesado-p{
+    margin-left:30px;
+    border-radius: 10px;
+    border:2px dotted var(--color-secundario);
+}
+.tdc-section-procesado-flex{
+    display: flex;
+    margin:30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border:2px dotted var(--color-secundario);
+}
+/*nosotros-html*/
+.nos-section-div{
+    display: flex;
+    justify-content: center;
+}
+.nos-container-img{
+  padding:10px;
+  
+}
+.nos-container-img img{
+    width: 100%;
+    height: auto;
+}
+.nosotros-text{
+    max-width: 700px;
+}
+.nos-equipo{
+    display:flex;
+    border-radius: 1px solid var(--color-secundario);
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+.nos-equipo-div{
+    display: flex;
+    background-color: #AF9074;
+    width:500px;
+    height:300px;
+    border-radius:10px;
+    border: 1px solid var(--color-secundario);
+    margin-bottom: 10px;
+    margin-left:2%;
+    margin-right:2%;
+}
+.nos-equipó-div-container-img{
+    width:200px;
+}
+.nos-equipó-div-container-img img{
+    width:100%;
+    height: 300px;
+}
+.nos-equipo-div-info{
+    width:250px;
+    margin:5px
+}
+/*contacto.html*/
+.main-contactme{
+    display:flex;
+    justify-content: center;
+}
+.main-contactme form{
+    border-left:4px solid var(--color-secundario) ;
+    border-right:4px solid var(--color-secundario) ;
+    padding:15px;
+}
+.contactme-lab:hover{
+    border: 2px dotted var(--color-secundario);
+}
+#contactme{
+    text-align: center;
+}
 /*footer*/
 footer{
     margin:0px;
@@ -262,4 +301,55 @@ a {
   /* Estilo para enlaces activos */
   a:active {
     color: inherit; 
+  }
+
+
+  /*Media querys necesarias 2*/
+  @media only screen and (max-width:700px){
+    .container-image{
+        display:none;
+    }
+    .acdca-section-text{
+        max-width: 100%;
+        margin:25px;
+        padding: 5px;
+        background-color:rgba(230, 197, 169, 0.9);
+        border-radius: 15px;
+        border:1px dotted rgb(33, 17, 4)
+    }
+    .main-acdca{
+        background-image: url(../images/cafe-en-grano.jpg);
+    
+    }
+  }
+  @media only screen and (max-width:700px){
+    
+    .nosotros h2{
+        font-size:50px;
+        border-radius: 10px;
+        border:2px solid var(--color-secundario);
+        margin:10px
+    }
+    .nos-section-div{
+        flex-wrap: wrap;
+    }
+    .nos-container-img{
+        margin:50px;
+    }
+    .nosotros-text{
+        margin:20px;
+    }
+    .nosotros-text p{
+        border-radius:10px;
+        background-color: var(--color-secundario);
+        color:antiquewhite;
+    }
+    span{
+        color: azure;
+        font-weight: bold;
+    }
+    .nos-equipo-div{
+        background-color: var(--color-secundario);
+        color: antiquewhite;
+    }
   }
