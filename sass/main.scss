@@ -1,0 +1,23 @@
+//base
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import "base/reset";
+
+//utilidades
+@import "utilidades/mixin";
+@import "utilidades/extend";
+@import "utilidades/variables";
+//componentes
+@import "components/header";
+@import "components/media-query";
+@import "components/footer";
+//pages
+@import "pages/acerca-del-cafe";
+@import "pages/contacto";
+@import "pages/index";
+@import "pages/nosotros";
+@import "pages/tipos-de-cafe";
+
+main{
+    padding-top:15px;
+    background-color: $-color-background;
+}

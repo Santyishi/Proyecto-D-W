@@ -1,0 +1,8 @@
+
+@mixin size-img($width:100%,$height:auto){
+    width:$width ;
+    height:$height;
+}
+@mixin border-radius($radius: 10px) {
+    border-radius: $radius;
+  }
