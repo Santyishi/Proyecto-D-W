@@ -1,0 +1,42 @@
+@import "../utilidades/variables";
+header {
+    background-image: url(../images/header-coff.jpg);
+    display: flex;
+    justify-content: space-around;
+    font-family:$-font-primario;
+    height: 100px;
+    color: $-color-secundario;
+    font-weight: bold;
+
+    .background-radius {
+        background-color: burlywood;
+        border-radius: 10px;
+        margin: 10px;
+        color: $-color-secundario;
+        a{
+            color:$-color-secundario;
+            text-decoration: none;
+        }
+        :hover{
+            color:aliceblue; ;
+            font-weight: bold;
+        }
+    }
+
+    li:hover,
+    .header-back:hover {
+        background-color: $-color-secundario;
+    }
+    .navbar-nav {
+        .nav-link:hover,
+        .header-back:hover {
+            color: aliceblue;
+            font-weight: bold;
+        }
+    }
+
+    .navbar-toggler:not(.collapsed) {
+            background-color: $-color-primario;
+            border: 2px solid $-color-secundario;
+    }
+};

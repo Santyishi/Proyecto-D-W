@@ -1,0 +1,40 @@
+@import "../utilidades/variables";
+footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: $-color-primario;
+    min-height: 250px;
+
+    a{
+        display:flex;
+        justify-content: center;
+        .contactme-icon {
+            margin-right: 4px;
+            color:$-color-icon; 
+            width: 30px;
+
+            svg{
+
+            }
+            :hover{
+                color:$-color-secundario;
+            }
+        }
+    }
+
+    .text-align {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-terminos {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .footer-hov:hover {
+        color:$-color-secundario;
+    }
+};
