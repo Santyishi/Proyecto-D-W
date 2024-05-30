@@ -1,0 +1,41 @@
+//variables
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/media-query";
+
+
+.main-acdca{
+    display: flex;
+
+    @include respond-to-mobile{
+        background-image: url(../images/cafe-en-grano.jpg);
+
+    }
+    @include respond-to-tablet{
+        height:1300px;
+    }
+    .container-image{
+        background-image: url(../images/cafe-en-grano.jpg);
+        background-repeat: repeat-y;
+        background-size: cover;
+        width: 400px;
+        height: auto;
+        margin-right:20px;
+    
+        @include respond-to-mobile{
+            display:none;
+        }
+    }
+    .acdca-section-text{
+        max-width: 80%;
+    
+        @include respond-to-mobile{
+            max-width: 100%;
+            margin:25px;
+            padding: 5px;
+            background-color:rgba(230, 197, 169, 0.9);
+            border-radius: 15px;
+            border:1px dotted rgb(33, 17, 4) ;
+        }
+    }
+}
