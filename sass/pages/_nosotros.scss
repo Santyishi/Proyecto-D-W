@@ -7,7 +7,7 @@
         @include respond-to-mobile{
             font-size:50px;
             border-radius: 10px;
-            border:2px solid var(--color-secundario);
+            @include border-type(1px,dashed,$-color-secundario);
             margin:10px
         }  
     }
@@ -62,7 +62,7 @@
 }
 .nos-equipo{
     display:flex;
-    border-radius: 1px solid var(--color-secundario);
+    @include border-radius(12px);
     flex-wrap: wrap;
     justify-content: center;
     .nos-equipo-div{
@@ -71,7 +71,7 @@
         max-width:500px;
         height:300px;
         border-radius:10px;
-        border: 1px solid var(--color-secundario);
+        @include border-type(1px,dashed,$-color-secundario);
         margin-bottom: 10px;
         margin-left:2%;
         margin-right:2%;

@@ -1,14 +1,9 @@
 @import "../utilidades/variables";
 
-@mixin size-img($width:100%,$height:auto){
-    width:$width ;
-    height:$height;
+@mixin border-type($tam,$type,$color){
+  border: $tam $type $color;
 }
 @mixin border-radius($radius: 10px) {
-    border-radius: $radius;
+    border-radius: $radius ;
+
   }
-@mixin hover-effect($hover-color) {
-    &:hover {
-      color: $hover-color;
-    }
-}
