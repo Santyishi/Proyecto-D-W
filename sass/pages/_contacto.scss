@@ -1,3 +1,4 @@
+@import "../utilidades/variables";
 .main-contact{
     @include respond-to-tablet{
         height:1300px;
@@ -7,14 +8,14 @@
         justify-content: center;
 
         form{
-            border-left:4px solid var(--color-secundario) ;
-            border-right:4px solid var(--color-secundario) ;
+            border-left:4px solid $-color-secundario ;
+            border-right:4px solid $-color-secundario ;
             padding:15px;
         }
     }
   
     .contactme-lab:hover{
-        border: 2px dotted var(--color-secundario);
+        @extend %border-dashed;
     }
     #contactme{
         text-align: center;

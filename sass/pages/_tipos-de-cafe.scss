@@ -32,7 +32,7 @@
             background-color: $-color-span;
             
             @include respond-to-tablet{
-                border:2px dotted $-color-secundario;
+               @include border-type(2px,dotted,$-color-secundario);
                 background-color: $-color-background;
             }
         }
