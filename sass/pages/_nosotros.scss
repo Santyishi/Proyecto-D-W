@@ -1,0 +1,105 @@
+
+@import "../utilidades/variables";
+@import "../utilidades/extend";
+.nosotros{  
+
+    h2{
+        @include respond-to-mobile{
+            font-size:50px;
+            border-radius: 10px;
+            border:2px solid var(--color-secundario);
+            margin:10px
+        }  
+    }
+
+    .nos-section-div{
+        display: flex;
+        justify-content: center;
+
+        @include respond-to-mobile{
+            flex-wrap: wrap;
+        }
+
+        .nos-container-img{
+            padding:10px;
+            
+            @include respond-to-mobile{
+                margin:50px;
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .nosotros-text{
+            max-width: 700px;
+
+            @include respond-to-mobile{
+                margin:20px;
+            }
+
+            p{
+                @include respond-to-mobile{
+                    border-radius:10px;
+                    background-color: $-color-secundario;
+                    color:antiquewhite;
+                }
+
+                span{
+                    @include respond-to-mobile{
+                        color:$-color-primario;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+.nos-equipo{
+    display:flex;
+    border-radius: 1px solid var(--color-secundario);
+    flex-wrap: wrap;
+    justify-content: center;
+    .nos-equipo-div{
+        display: flex;
+        background-color: #AF9074;
+        max-width:500px;
+        height:300px;
+        border-radius:10px;
+        border: 1px solid var(--color-secundario);
+        margin-bottom: 10px;
+        margin-left:2%;
+        margin-right:2%;
+
+        @include respond-to-mobile{
+            background-color: $-color-secundario;
+            color:$-color-background;
+        }
+
+        .nos-equipó-div-container-img{
+            width:200px;
+
+            img{
+                width:100%;
+                height: 300px;
+            }
+        }
+        
+        .nos-equipo-div-info{
+            max-width:250px;
+            margin:5px;
+
+
+        }
+
+
+    }
+  
+}
+
+

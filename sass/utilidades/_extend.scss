@@ -1,7 +1,12 @@
 //importo variables
-@import "_variables.scss";
+@import "../utilidades/variables";
 
 %text-center{
     text-align: center;
     font-family:$-font-primario;
 }
+
+
+%border-dashed {
+    border: 1px dashed $-color-secundario;
+  }

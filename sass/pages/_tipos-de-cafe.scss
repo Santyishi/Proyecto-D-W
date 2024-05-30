@@ -1,0 +1,50 @@
+.main-tdc{    
+    @include respond-to-tablet{
+        height: 1400px;
+    }
+    .section-tdc{
+        display: flex;
+        justify-content: center;
+    
+        .section-tdc-size{
+            max-width: 50%;
+            max-height:35%;
+
+            .carrousel-background{
+                background-color: rgb(233, 186, 145,0.8);
+                border-radius:10px;
+            }
+        }
+
+    }
+    
+    .tdc-section-procesado{
+        justify-content: space-between;
+        margin:15px;
+
+        @include respond-to-tablet{
+            display: flex;
+            
+        }
+        p{
+            margin-left:30px;
+            border-radius: 10px;
+            background-color: $-color-span;
+            
+            @include respond-to-tablet{
+                border:2px dotted $-color-secundario;
+                background-color: $-color-background;
+            }
+        }
+        
+        div{
+            display: flex;
+            margin:30px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            
+        }
+    
+    }
+}

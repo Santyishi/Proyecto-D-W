@@ -1,0 +1,22 @@
+.main-contact{
+    @include respond-to-tablet{
+        height:1300px;
+    }
+    .main-contactme{
+        display:flex;
+        justify-content: center;
+
+        form{
+            border-left:4px solid var(--color-secundario) ;
+            border-right:4px solid var(--color-secundario) ;
+            padding:15px;
+        }
+    }
+  
+    .contactme-lab:hover{
+        border: 2px dotted var(--color-secundario);
+    }
+    #contactme{
+        text-align: center;
+    }
+}
