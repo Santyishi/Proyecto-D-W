@@ -47,40 +47,27 @@
         <h2>Contacto</h2>
         <section class="main-contactme">
           
-            <form>
+            <form netlify name="Contacto" method="post">
                 <fieldset>
                     <legend>Contactame completando el formulario</legend>
                    
                     <div>
-                        <label >
-                            nombre
-                        </label>
-                        <input class="contactme-lab" type="text" placeholder="tú nombre">
+                        <input class="contactme-lab" type="text" placeholder="tú nombre" name="nombre">
                     </div>
                     <div>
-                        <label>
-                            apellido
-                        </label>
-                            <input  class="contactme-lab" type="text" placeholder="tú apellido">
+                            <input  class="contactme-lab" type="text" placeholder="tú apellido" name="apellido">
                     </div>
                     <div>
-                        <label>
-                            teléfono
-                        </label>
-                        <input  class="contactme-lab" type="tel" placeholder="tú teléfono">
+                        <input  class="contactme-lab" type="number" placeholder="tú teléfono" name="apellido">
                     </div>
                     <div>
-                        <label>
-                            email
-                        </label>
-                        <input  class="contactme-lab" type="email" placeholder="email">
+                        <input  class="contactme-lab" type="email" placeholder="email" name="email">
                     </div>
                     <div>
-                        <label>Mensaje</label>
-                        <textarea class="contactme-lab"></textarea>
-                        <input  class="contactme-lab" type="submit" value="enviar">
+                        <textarea class="contactme-lab" name="mensaje"></textarea>
+                        <input  class="contactme-lab" type="submit" value="enviar" name="enviar">
                     </div>
-                </fieldsetZ>
+                </fieldset>
             </form>
         </section>
         <section id="contactme">
