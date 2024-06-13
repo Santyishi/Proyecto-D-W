@@ -10,3 +10,8 @@
 %border-dashed {
     border: 1px dashed $-color-secundario;
   }
+
+%input-contact{
+    background-color:$-color-background;
+    border-bottom: 1px, dotted black;
+}

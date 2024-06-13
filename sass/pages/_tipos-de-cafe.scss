@@ -7,8 +7,8 @@
         justify-content: center;
     
         .section-tdc-size{
-            max-width: 50%;
-            max-height:35%;
+            width: 50%;
+            height:35%;
 
             .carrousel-background{
                 background-color: rgb(233, 186, 145,0.8);
@@ -18,33 +18,38 @@
 
     }
     
-    .tdc-section-procesado{
-        justify-content: space-between;
-        margin:15px;
+    section{
 
-        @include respond-to-tablet{
-            display: flex;
-            
-        }
-        p{
-            margin-left:30px;
-            border-radius: 10px;
-            background-color: $-color-span;
-            
+       
+        .tdc-section-procesado{
+            justify-content: space-between;
+            margin:15px;
+
             @include respond-to-tablet{
-               @include border-type(2px,dotted,$-color-secundario);
-                background-color: $-color-background;
+                display: flex;
+                
             }
-        }
-        
-        div{
-            display: flex;
-            margin:30px;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
+            p{
             
+                border-radius: 10px;
+                background-color: $-color-span;
+                
+                @include respond-to-tablet{
+                @include border-type(2px,dotted,$-color-secundario);
+                    background-color: $-color-background;
+                    margin-left:30px;
+                }
+            }
+            
+            div{
+                display: flex;
+                margin:30px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                
+            }
+        
         }
-    
     }
 }

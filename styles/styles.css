@@ -11,8 +11,13 @@ main h5, main h4, main h2 {
   font-family: "Nothing You Could Do", cursive;
 }
 
-.ind-section2 .item5, .ind-section2 .item4, .ind-section2 .item3, .ind-section2 .item2, .ind-section2 .item1, .ind-section, .main-ind .ind-div-p, .main-contact .contactme-lab:hover {
+.ind-section2 .item5, .ind-section2 .item4, .ind-section2 .item3, .ind-section2 .item2, .ind-section2 .item1, .ind-section, .main-ind .ind-div-p {
   border: 1px dashed #281709;
+}
+
+.main-contact .contactme-lab:hover {
+  background-color: #DBC4A1;
+  border-bottom: 1px, dotted black;
 }
 
 header {
@@ -37,6 +42,9 @@ header .background-radius a {
 header .background-radius :hover {
   color: aliceblue;
   font-weight: bold;
+}
+header nav {
+  z-index: 1024;
 }
 header li:hover,
 header .header-back:hover {
@@ -129,6 +137,9 @@ footer .footer-hov:hover {
     height: 1300px;
   }
 }
+.main-contact input:hover::placeholder {
+  color: #281709; /* Cambia el color aquí */
+}
 .main-contact .main-contactme {
   display: flex;
   justify-content: center;
@@ -137,6 +148,16 @@ footer .footer-hov:hover {
   border-left: 4px solid #281709;
   border-right: 4px solid #281709;
   padding: 15px;
+}
+.main-contact .main-contactme form legend {
+  text-decoration: underline #281709;
+  color: -#281709;
+}
+.main-contact .main-contactme form input {
+  width: 100%;
+}
+.main-contact .main-contactme form textarea {
+  width: 100%;
 }
 .main-contact #contactme {
   text-align: center;
@@ -174,17 +195,27 @@ footer .footer-hov:hover {
   justify-content: space-around;
   max-height: 50%;
 }
+.ind-section div h4 {
+  max-height: 30%;
+  margin: 10px;
+}
+@media (min-width: 1024px) {
+  .ind-section div h4 {
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+}
+.ind-section div p {
+  margin: 4px;
+}
 @media (min-width: 768px) {
   .ind-section div {
     max-width: 45%;
+    justify-content: unset;
   }
 }
 @media (min-width: 1024px) {
   .ind-section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     max-width: 60%;
     max-height: 30%;
   }
@@ -314,8 +345,13 @@ main h5, main h4, main h2 {
   font-family: "Nothing You Could Do", cursive;
 }
 
-.main-contact .contactme-lab:hover, .main-ind .ind-div-p, .ind-section, .ind-section2 .item1, .ind-section2 .item2, .ind-section2 .item3, .ind-section2 .item4, .ind-section2 .item5 {
+.main-ind .ind-div-p, .ind-section, .ind-section2 .item1, .ind-section2 .item2, .ind-section2 .item3, .ind-section2 .item4, .ind-section2 .item5 {
   border: 1px dashed #281709;
+}
+
+.main-contact .contactme-lab:hover {
+  background-color: #DBC4A1;
+  border-bottom: 1px, dotted black;
 }
 
 @media (max-width: 768px) {
@@ -414,34 +450,34 @@ main h5, main h4, main h2 {
   justify-content: center;
 }
 .main-tdc .section-tdc .section-tdc-size {
-  max-width: 50%;
-  max-height: 35%;
+  width: 50%;
+  height: 35%;
 }
 .main-tdc .section-tdc .section-tdc-size .carrousel-background {
   background-color: rgba(233, 186, 145, 0.8);
   border-radius: 10px;
 }
-.main-tdc .tdc-section-procesado {
+.main-tdc section .tdc-section-procesado {
   justify-content: space-between;
   margin: 15px;
 }
 @media (min-width: 768px) {
-  .main-tdc .tdc-section-procesado {
+  .main-tdc section .tdc-section-procesado {
     display: flex;
   }
 }
-.main-tdc .tdc-section-procesado p {
-  margin-left: 30px;
+.main-tdc section .tdc-section-procesado p {
   border-radius: 10px;
   background-color: #826E55;
 }
 @media (min-width: 768px) {
-  .main-tdc .tdc-section-procesado p {
+  .main-tdc section .tdc-section-procesado p {
     border: 2px dotted #281709;
     background-color: #DBC4A1;
+    margin-left: 30px;
   }
 }
-.main-tdc .tdc-section-procesado div {
+.main-tdc section .tdc-section-procesado div {
   display: flex;
   margin: 30px;
   justify-content: center;
@@ -469,6 +505,11 @@ main span {
 }
 main a {
   color: #55432F;
+}
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
