@@ -21,3 +21,15 @@ $breakpoint-desktop: 1024px;
     @content;
   }
 }  
+
+main{
+  font-size: 18px; // Base para móviles
+
+  @include respond-to-tablet {
+    font-size: 20px; // Ajuste para tabletas
+  }
+
+  @include respond-to-desktop {
+    font-size: 22px; // Ajuste para escritorios
+  }
+}

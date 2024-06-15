@@ -1,6 +1,6 @@
 .main-tdc{    
     @include respond-to-tablet{
-        height: 1400px;
+        min-height: 1400px;
     }
     .section-tdc{
         display: flex;
@@ -23,7 +23,8 @@
        
         .tdc-section-procesado{
             justify-content: space-between;
-            margin:15px;
+            margin:0px 15px;
+            
 
             @include respond-to-tablet{
                 display: flex;
@@ -32,10 +33,10 @@
             p{
             
                 border-radius: 10px;
-                background-color: $-color-span;
+                background-color: $-color-primario;
                 
                 @include respond-to-tablet{
-                @include border-type(2px,dotted,$-color-secundario);
+                    @include border-type(2px,dotted,$-color-secundario);
                     background-color: $-color-background;
                     margin-left:30px;
                 }

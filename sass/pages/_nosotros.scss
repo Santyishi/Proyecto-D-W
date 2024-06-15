@@ -20,6 +20,10 @@
             flex-wrap: wrap;
         }
 
+        @include respond-to-tablet{
+            flex-wrap: wrap;
+        }
+
         .nos-container-img{
             padding:10px;
             
@@ -42,14 +46,13 @@
             p{
                 @include respond-to-mobile{
                     border-radius:10px;
-                    background-color: $-color-secundario;
-                    color:antiquewhite;
+                    
+                    color:$-color-secundario;
                 }
 
                 span{
                     @include respond-to-mobile{
-                        color:$-color-primario;
-                        font-weight: bold;
+                       text-decoration: underline;
 
                     }
                 }
@@ -67,7 +70,7 @@
     justify-content: center;
     .nos-equipo-div{
         display: flex;
-        background-color: #AF9074;
+        background-color: $-color-primario;
         max-width:500px;
         height:300px;
         border-radius:10px;
@@ -77,8 +80,9 @@
         margin-right:2%;
 
         @include respond-to-mobile{
-            background-color: $-color-secundario;
-            color:$-color-background;
+            h5{
+                color:$-color-secundario;
+            }
         }
 
         .nos-equipó-div-container-img{

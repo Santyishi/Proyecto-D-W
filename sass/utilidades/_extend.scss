@@ -1,9 +1,10 @@
 //importo variables
-@import "../utilidades/variables";
-
+@import "variables";
+@import"_media-query.scss";
 %text-center{
     text-align: center;
     font-family:$-font-primario;
+    font-weight: bold;
 }
 
 

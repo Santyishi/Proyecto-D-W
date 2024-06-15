@@ -17,9 +17,10 @@
 @import "pages/nosotros";
 @import "pages/tipos-de-cafe";
 
+
 main{
-    
-    padding-top:15px;
+
+    padding:15px;
     background-color: $-color-background;
     h2{
         @extend %text-center;
@@ -36,7 +37,7 @@ main{
         text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.5);
     }
     span{
-        color:$-color-span;
+        color:$-color-secundario;
         font-weight: bold;
     }
     a{
@@ -46,8 +47,3 @@ main{
         
     }
 }
-#map {
-    height: 400px;  // Ajusta la altura según tus necesidades
-    width: 100%;   // El mapa ocupará todo el ancho del contenedor
-    margin-top: 20px;  // Margen superior para separarlo del texto
-  }

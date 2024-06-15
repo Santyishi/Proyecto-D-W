@@ -1,7 +1,7 @@
 @import "../utilidades/variables";
 .main-contact{
     @include respond-to-tablet{
-        height:1300px;
+        min-height:1300px;
     }
     input:hover::placeholder {
         color:$-color-secundario; /* Cambia el color aquí */
