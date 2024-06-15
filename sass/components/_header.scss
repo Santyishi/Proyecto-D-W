@@ -1,6 +1,8 @@
 @import "../utilidades/variables";
 header {
-    background-image: url(../images/header-coff.jpg);
+    background-image: url(../../images/nuevo-header.png);
+    background-repeat: no-repeat;
+    background-color: #AF9074;
     display: flex;
     justify-content: space-around;
     font-family:$-font-primario;
@@ -8,11 +10,15 @@ header {
     color: $-color-secundario;
     font-weight: bold;
 
+    h1{
+        margin-left:60px;
+    }
 
     .background-radius {
         background-color: burlywood;
         border-radius: 10px;
-        margin: 10px;
+        margin:10px;
+        margin-left: 60px;
         color: $-color-secundario;
         a{
             color:$-color-secundario;

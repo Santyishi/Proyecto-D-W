@@ -6,6 +6,7 @@
 
 .main-acdca{
     display: flex;
+    padding:0px;
 
     @include respond-to-mobile{
         background-image: url(../images/cafe-en-grano.jpg);

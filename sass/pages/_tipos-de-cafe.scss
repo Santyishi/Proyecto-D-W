@@ -10,9 +10,12 @@
             width: 50%;
             height:35%;
 
-            .carrousel-background{
-                background-color: rgb(233, 186, 145,0.8);
-                border-radius:10px;
+            .carousel-caption{
+                font-size:15px;
+                .carrousel-background{
+                    background-color: rgb(233, 186, 145,0.8);
+                    border-radius:10px;
+                }      
             }
         }
 
@@ -22,7 +25,7 @@
 
        
         .tdc-section-procesado{
-            justify-content: space-between;
+            justify-content: space-around;
             margin:0px 15px;
             
 
@@ -31,7 +34,7 @@
                 
             }
             p{
-            
+                max-width: 1200px;
                 border-radius: 10px;
                 background-color: $-color-primario;
                 

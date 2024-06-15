@@ -16,11 +16,11 @@ main {
 }
 @media (min-width: 1024px) {
   main {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
-main h5, main h4, main h2 {
+main h5, main h4, main h2, .modal .modal-content .modal-title {
   text-align: center;
   font-family: "Nothing You Could Do", cursive;
   font-weight: bold;
@@ -45,12 +45,14 @@ main {
 }
 @media (min-width: 1024px) {
   main {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 header {
-  background-image: url(../images/header-coff.jpg);
+  background-image: url(../../images/nuevo-header.png);
+  background-repeat: no-repeat;
+  background-color: #AF9074;
   display: flex;
   justify-content: space-around;
   font-family: "Nothing You Could Do", cursive;
@@ -58,10 +60,14 @@ header {
   color: #281709;
   font-weight: bold;
 }
+header h1 {
+  margin-left: 60px;
+}
 header .background-radius {
   background-color: burlywood;
   border-radius: 10px;
   margin: 10px;
+  margin-left: 60px;
   color: #281709;
 }
 header .background-radius a {
@@ -131,12 +137,13 @@ main {
 }
 @media (min-width: 1024px) {
   main {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 .main-acdca {
   display: flex;
+  padding: 0px;
 }
 @media (max-width: 768px) {
   .main-acdca {
@@ -216,7 +223,7 @@ main {
 }
 @media (min-width: 1024px) {
   main {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -417,11 +424,11 @@ main {
 }
 @media (min-width: 1024px) {
   main {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
-main h5, main h4, main h2 {
+main h5, main h4, main h2, .modal .modal-content .modal-title {
   text-align: center;
   font-family: "Nothing You Could Do", cursive;
   font-weight: bold;
@@ -496,6 +503,24 @@ main h5, main h4, main h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
+.nos-equipo .btn-ver-imagen {
+  display: none;
+}
+.nos-equipo .btn {
+  background-color: burlywood;
+  color: #281709;
+  border: 1px dotted #281709;
+}
+.nos-equipo .btn:hover {
+  background-color: #AF9074;
+  color: #a55f25;
+  border-color: #522f12;
+}
+@media (max-width: 768px) {
+  .nos-equipo .btn-ver-imagen {
+    display: flex;
+  }
+}
 .nos-equipo .nos-equipo-div {
   display: flex;
   background-color: #AF9074;
@@ -519,9 +544,34 @@ main h5, main h4, main h2 {
   width: 100%;
   height: 300px;
 }
+@media (max-width: 768px) {
+  .nos-equipo .nos-equipo-div .nos-equipó-div-container-img {
+    display: none;
+  }
+}
 .nos-equipo .nos-equipo-div .nos-equipo-div-info {
+  display: flex;
   max-width: 250px;
   margin: 5px;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .nos-equipo .nos-equipo-div .nos-equipo-div-info {
+    max-width: 300px;
+  }
+}
+
+.modal {
+  background-color: burlywood;
+}
+.modal .modal-content {
+  align-items: center;
+}
+.modal .modal-content .modal-title {
+  font-weight: bold;
+  color: #281709;
+  text-shadow: 2px 6px 4px rgba(195, 143, 12, 0.5);
 }
 
 @media (min-width: 768px) {
@@ -537,12 +587,15 @@ main h5, main h4, main h2 {
   width: 50%;
   height: 35%;
 }
-.main-tdc .section-tdc .section-tdc-size .carrousel-background {
+.main-tdc .section-tdc .section-tdc-size .carousel-caption {
+  font-size: 15px;
+}
+.main-tdc .section-tdc .section-tdc-size .carousel-caption .carrousel-background {
   background-color: rgba(233, 186, 145, 0.8);
   border-radius: 10px;
 }
 .main-tdc section .tdc-section-procesado {
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0px 15px;
 }
 @media (min-width: 768px) {
@@ -551,6 +604,7 @@ main h5, main h4, main h2 {
   }
 }
 .main-tdc section .tdc-section-procesado p {
+  max-width: 1200px;
   border-radius: 10px;
   background-color: #AF9074;
 }
